@@ -229,7 +229,7 @@ export default function About() {
                     <div className="flex flex-col  h-full items-center  w-4/6 ">
                         <div className="text-2xl">
                         </div>
-                        <div className="md:text-5xl sm:text-lg text-sm font-barlow   ">
+                        <div className="md:text-5xl text-xl  font-barlow   ">
                             Our Values
                         </div>
                         <div className=" mt-4 divide-y-2 divide-gray-100">
@@ -238,10 +238,10 @@ export default function About() {
 
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-xl font-italianno title-font mb-2">Quality First</h2>
+                                        <h2 className="md:text-3xl text-2xl font-italianno title-font mb-2">Quality First</h2>
                                     </ViewDetectAnimation>
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">We believe that quality is non-negotiable. Every product on SpareRoom undergoes rigorous scrutiny to ensure it meets our high standards of craftsmanship and durability.</p>
+                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
+                                        <p className="leading-relaxed md:text-xl text-sm">We believe that quality is non-negotiable. Every product on SpareRoom undergoes rigorous scrutiny to ensure it meets our high standards of craftsmanship and durability.</p>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
@@ -249,30 +249,30 @@ export default function About() {
 
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-xl font-italianno  title-font mb-2">Customer-Centricity</h2>
+                                        <h2 className="md:text-3xl text-2xl font-italianno  title-font mb-2">Customer-Centricity</h2>
                                     </ViewDetectAnimation>
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">Our customers are at the heart of everything we do. We value your feedback, suggestions, and ideas, and continuously strive to tailor our offerings to meet your needs and aspirations.</p>
-                                    </ViewDetectAnimation>
-                                </div>
-                            </div>
-                            <div className="py-4 flex flex-wrap md:flex-nowrap">
-                                <div className="md:flex-grow">
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-xl font-italianno  title-font mb-2">Design Democracy</h2>
-                                    </ViewDetectAnimation>
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed ">We envision a world where exceptional design is accessible to all. Through our platform, we aim to democratize interior design, making it inclusive and enjoyable for everyone.</p>
+                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
+                                        <p className="leading-relaxed md:text-xl text-sm">Our customers are at the heart of everything we do. We value your feedback, suggestions, and ideas, and continuously strive to tailor our offerings to meet your needs and aspirations.</p>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-xl font-italianno  title-font mb-2"> Sustainability Matters</h2>
+                                        <h2 className="md:text-3xl text-2xl font-italianno  title-font mb-2">Design Democracy</h2>
                                     </ViewDetectAnimation>
+                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
+                                        <p className="leading-relaxed md:text-xl text-sm ">We envision a world where exceptional design is accessible to all. Through our platform, we aim to democratize interior design, making it inclusive and enjoyable for everyone.</p>
+                                    </ViewDetectAnimation>
+                                </div>
+                            </div>
+                            <div className="py-4 flex flex-wrap md:flex-nowrap">
+                                <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed "> We are committed to sustainable business practices, from responsible sourcing to eco-friendly packaging. We believe in leaving a positive impact on the environment and the communities we serve.</p>
+                                        <h2 className="md:text-3xl text-2xl font-italianno  title-font mb-2"> Sustainability Matters</h2>
+                                    </ViewDetectAnimation>
+                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
+                                        <p className="leading-relaxed md:text-xl text-sm"> We are committed to sustainable business practices, from responsible sourcing to eco-friendly packaging. We believe in leaving a positive impact on the environment and the communities we serve.</p>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
@@ -285,14 +285,14 @@ export default function About() {
                 picOpp={true} customCssPicInner={'w-full md:h-3/6 h2/6 rounded-sm'} backgroundImageName={"background/pictures-02.png"} >
                 <div className="flex justify-center h-screen w-full z-10">
                     <div className="flex flex-col h-full w-5/6 items-low justify-end mt-5 text-center ">
-                        <div className="flex justify-center md:text-5xl sm:text-lg text-sm font-barlow ">
-                        Our Mission
+                        <div className="flex justify-center md:text-5xl sm:text-2xl text-lg font-barlow ">
+                            Our Mission
                         </div>
                         <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-4  my-4" viewBox="0 0 975.036 975.036">
                                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                             </svg>
-                            <p className="leading-relaxed font-dancing text-2xl">Our mission at SpareRoom is to inspire and guide you in creating spaces that reflect your personality and lifestyle. We aim to provide a seamless and delightful shopping experience, offering not just products, but a journey of design exploration..</p>
+                            <p className="leading-relaxed font-dancing md:text-2xl text-base">Our mission at SpareRoom is to inspire and guide you in creating spaces that reflect your personality and lifestyle. We aim to provide a seamless and delightful shopping experience, offering not just products, but a journey of design exploration..</p>
                             <span className="inline-block h-1 w-10 rounded mt-8 mb-6"></span>
                             <h2 className="font-medium title-font tracking-wider text-sm">Tima Ashley</h2>
                             <p className="font-dancing text-2xl">Senior Product Designer</p>
@@ -301,11 +301,9 @@ export default function About() {
                     </div>
                 </div>
             </MyDiv>
-            <div className="dark:bg-black w-full p-10 pt-24 ">
-                <div className="container mx-auto ">
-                    <Footer />
-                </div>
-            </div>
+
+            <Footer />
+
         </div>
     )
 }

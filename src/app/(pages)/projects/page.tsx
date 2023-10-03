@@ -32,14 +32,14 @@ function Projects() {
             minHeight: "4rem",
             height: "20vh"
           }}>
-          {show && <><div className=" flex flex-col justify-between items-center mt-2 md:px-5 text-white text-center md:text-xl text-xs  bg-opacity-50 md:bg-transparent bg-white rounded-lg " >
-            <div className="my-auto">
+          {show && <><div className=" flex flex-col justify-center  h-screen items-center mt-2 md:px-5 dark:text-white text-black text-center md:text-xl text-xs  rounded-lg " >
+            <div className=""> 
               <ViewDetectAnimation direction="Y" styles={""} speed={0} level={0} to={0} repeat={false} >
                 <p className="underline font-dancing mt-2">Disclaimer</p>
               </ViewDetectAnimation></div>
-            <div className="my-auto md:mx-10">
+            <div className=" ">
               <ViewDetectAnimation direction="Y" speed={1000} styles={""} level={0} to={0} repeat={false}>
-                <p className="font-barlow md:px-5  md:mt-2 mt-2 ">The images displayed on this website are the property of SpareOom Ltd. They are used for illustrative purposes only.
+                <p className=" md:px-5  md:mt-2 mt-2 bg-slate-100 bg-opacity-20 dark:bg-slate-900 dark:bg-opacity-20 ">The images displayed on this website are the property of SpareOom Ltd. They are used for illustrative purposes only.
                   All images are subject to copyright and should not be reproduced without proper authorization</p>
               </ViewDetectAnimation>
             </div>
@@ -57,8 +57,8 @@ function Projects() {
           className="-z-50 flex justify-center items-center pb-20"
           speed={0.5}
           sticky={{ start: 0.5, end: pics.length - 1.5 }}>
-          <Image width={500} height={500} src={"/images/logo/logo2.svg"} alt="project" className=" dark:hidden block h-1/4 w-1/4  shadow-xl " />
-          <Image width={500} height={500} src={"/images/logo/night.svg"} alt="project" className=" dark:block hidden h-1/4 w-1/4  shadow-xl " />
+          <Image width={500} height={500} src={"/images/logo/logo2.svg"} alt="project" className=" dark:hidden block h-1/4 w-1/4   " />
+          <Image width={500} height={500} src={"/images/logo/night.svg"} alt="project" className=" dark:block hidden h-1/4 w-1/4   " />
 
         </ParallaxLayer>
 

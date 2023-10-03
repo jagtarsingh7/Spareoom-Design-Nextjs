@@ -67,7 +67,7 @@ function HomeClientComponent() {
         config: { duration: 1000 },
     });
 
-    
+
     useChain([propAnimation1, propAnimation2, propAnimation3, propAnimation4])
 
 
@@ -96,7 +96,7 @@ function HomeClientComponent() {
 
                                 <animated.div className=" flex w-2/6 md:text-base text-xs text-start  py-3 ">
                                     <p>
-                                    Where your dream of a beautifully designed living space comes to life.
+                                        Where your dream of a beautifully designed living space comes to life.
                                     </p>
                                 </animated.div>
                                 <animated.div style={animateSpring4} className="font-barlow flex flex-grow justify-end text-end  lg:text-6xl md:text-4xl text-2xl  ">
@@ -109,12 +109,13 @@ function HomeClientComponent() {
                 </Banner>
 
 
-                
+
 
                 <MyDiv customCssPicOuter={'flex justify-end absolute top-0 w-full md:p-10 h-screen'}
                     picOpp={true} customCssPicInner={'w-1/4 h-4/6 rounded-md dark:opacity-80 opacity-95 '} backgroundImageName={"background/pictures-01.png"} >
-                    <div className="flex h-full flex-col justify-between font-barlow z-10 ">
-                        <div className="flex flex-grow w-full justify-start  ">
+                    <div className="flex min-h-fit flex-col font-barlow z-10 ">
+
+                        <div className="flex h-2/4 w-full justify-start py-10 ">
                             <div className="flex flex-col w-3/6 ">
                                 <div className="md:text-base text-xs  ">
                                     Crafting Dreams, Enhancing Lives
@@ -131,9 +132,10 @@ function HomeClientComponent() {
 
                             </div>
                         </div>
-                        <div className="flex h-1/4 justify-center  ">
+                        <div className="flex flex-grow justify-center  ">
                             <Trophy />
                         </div>
+
                     </div>
                 </MyDiv>
 
@@ -144,13 +146,13 @@ function HomeClientComponent() {
                             <SmallCoreValues />
                         </div>
                         <Link className="flex justify-center hover:text-red-900  md:text-3xl text-2xl  font-dancing pt-10 pb-14" href={"/services"}>
-                           Explore more
+                            Explore more
                         </Link>
                     </div>
                 </MyDiv>
 
-                <MyDiv customCssPicOuter={'flex justify-start absolute top-0 h-screen w-full px-10 py-20'}
-                    picOpp={true} customCssPicInner={' w-1/3 h-5/6 rounded-md dark:opacity-80 opacity-95'} backgroundImageName={"background/pictures-02.png"} >
+                <MyDiv customCssPicOuter={'flex justify-start absolute top-0 h-screen w-full md:px-10 py-20'}
+                    picOpp={true} customCssPicInner={' md:w-1/3 w-2/4 h-5/6 rounded-md dark:opacity-80 opacity-95'} backgroundImageName={"background/pictures-02.png"} >
                     <div className="flex w-full justify-end m-14 ">
                         <div className=" w-2/3 h-full flex  ">
                             <section className=" body-font overflow-hidden">
@@ -180,7 +182,7 @@ function HomeClientComponent() {
                     </div>
                 </MyDiv>
 
-                <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full p-10'}
+                <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full py-10 md:pt-5'}
                     picOpp={true} customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'} backgroundImageName={"background/pictures-04.png"} >
                     <div className="flex min-h-screen w-full  p-10 z-10">
                         <div className="flex flex-col h-full w-4/6 ">
@@ -192,18 +194,13 @@ function HomeClientComponent() {
                             </div>
 
                             <div className="flex items-end pb-4 text-2xl flex-grow">
-                                <QuoteForm/>
+                                <QuoteForm />
                             </div>
 
                         </div>
                     </div>
                 </MyDiv>
-
-                <div className="dark:bg-black w-full p-20 ">
-                    <div className="container mx-auto ">
-                        <Footer />
-                    </div>
-                </div>
+                <Footer />
             </div>
             : (<><Loading /></>));
 }
