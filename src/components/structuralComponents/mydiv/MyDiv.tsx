@@ -1,13 +1,8 @@
 'use client'
 
 import { IMyDivProp } from '../../../Interface/Interfaces';
-import { Children } from 'react';
 import Image from 'next/image';
-import { useState } from "react";
-import Loading from '../../../app/loading';
-import { Chilanka } from 'next/font/google';
 import { animated, useInView } from '@react-spring/web';
-import { AnimationLoader } from 'three';
 
 export default function MyDiv(props: IMyDivProp) {
 
