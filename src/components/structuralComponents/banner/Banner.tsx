@@ -20,9 +20,9 @@ export default function Banner(props: IBannerProp) {
     return (
         <div className='h-screen relative'>
             <div className={customCssPicOuter}>
-                <Image quality={75} onLoad={handleImageLoad} height={500} width={500} className={customCssPicInner} priority style={{ objectFit: 'cover' }} src={`/images/${backgroundImageName}`} alt={'banner'} />
+                <img onLoad={handleImageLoad}  className={customCssPicInner}  style={{ objectFit: 'cover' }} src={`/images/${backgroundImageName}`} alt={'banner'} />
             </div>
-            <div className='flex flex-col h-full w-full container mx-auto  relative'>
+            <div className='flex flex-col h-full w-full container mx-auto relative'>
                {headerOn}
                 {loader ? (
                         <div className="flex-grow flex flex-col  dark:text-white text-black "> 
