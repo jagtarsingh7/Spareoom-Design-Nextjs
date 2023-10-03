@@ -88,14 +88,14 @@ export default function Products() {
                 </div>
             </Banner>
             <MyDiv picOpp={false} customCssPicInner={undefined} customCssPicOuter={undefined} backgroundImageName={""} >
-                <div className="flex w-full h-screen ">
+                <div className="flex w-full  min-h-fit ">
                     <div className="flex w-1/6 text-3xl justify-center items-center">
                         <button>
                         {"<"}
                         </button>
                            
                     </div>
-                    <div className="flex flex-grow">
+                    <ViewDetectAnimation styles="flex flex-grow" direction={"Y"}  speed={1000} level={10} to={0} repeat={true}>
                     <section className="body-font overflow-hidden ">
                         <div className="container px-5 py-24 mx-auto">
                             <div className="lg:w-4/5 mx-auto flex flex-wrap">
@@ -134,7 +134,7 @@ export default function Products() {
                             </div>
                         </div>
                     </section>
-                    </div>
+                    </ViewDetectAnimation>
                    
                     <div className="flex w-1/6 text-3xl justify-center items-center">
                         <button>
@@ -149,12 +149,12 @@ export default function Products() {
             <MyDiv picOpp={false} customCssPicInner={undefined} customCssPicOuter={undefined} backgroundImageName={""} >
                 <section className=" body-font">
                     <div className="container px-5 py-24 mx-auto">
-                        <div className="flex flex-col text-center w-full mb-20">
+                        <ViewDetectAnimation styles="flex flex-col text-center w-full mb-20" direction={"Y"} speed={1000} level={-10} to={0} repeat={false}>
                             <h2 className="text-xstracking-widest font-medium title-font mb-1">Discover the Art of Home Styling</h2>
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 ">Your Path to Inspired Living</h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Welcome to the heart of SpareRoom, where style meets functionality, and every piece tells a unique design story. Our carefully curated product range brings you a diverse selection of furniture, decor, and accessories to transform your living space into a reflection of your personality and taste.</p>
-                        </div>
-                        <div className="flex flex-wrap">
+                        </ViewDetectAnimation>
+                        <ViewDetectAnimation direction={"Y"} speed={1000} level={10} to={0} repeat={false} styles="flex flex-wrap">
                             <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                                 <h2 className=" font-medium title-font mb-2">Furniture</h2>
                                 <p className="leading-relaxed text-base mb-4">Discover our collection of finely crafted furniture that combines form and function seamlessly. From elegant sofas that invite relaxation to practical yet stylish dining tables, our furniture offerings cater to various tastes and preferences.</p>
@@ -191,7 +191,7 @@ export default function Products() {
                                     </svg>
                                 </a>
                             </div>
-                        </div>
+                        </ViewDetectAnimation>
                         <button className="flex mx-auto mt-16 text-white  py-2 px-8 focus:outline-none hov-600  text-lg border rounded-xl hover:bg-red-950 font-dancing bg-red-800 bg">Products</button>
                     </div>
                 </section>

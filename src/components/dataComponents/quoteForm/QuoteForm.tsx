@@ -1,6 +1,7 @@
 'use client'
 import ViewDetectAnimation from '../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation';
 import { useState } from 'react';
+import Loading from '@component/app/loading';
 
 function QuoteForm() {
   const [loading, setloading] = useState(false)
@@ -35,10 +36,10 @@ function QuoteForm() {
 
   return (
     < section className=" text-black font-dancing">
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       
-          {loading ? (<div className='h-full '><div className=' h-full w-full transition animate-spin duration-500 flex justify-center items-center md:text-7xl text-4xl'> ⌛</div></div>) : (
+          {loading ? (<div className='h-full '><div className=' h-full w-full transition animate-spin duration-500 flex justify-center items-center '> <Loading/> </div></div>) : (
             <div className="rounded-lg p-8  lg:col-span-3 lg:p-12">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>

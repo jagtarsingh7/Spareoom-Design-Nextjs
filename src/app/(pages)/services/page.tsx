@@ -63,11 +63,11 @@ function Services() {
                     <div className="mt-10 flex flex-col w-full  " >
                         <div className="flex w-full justify-between " >
                             <animated.div style={animateSpring2} className=" font-barlow flex flex-grow lg:text-8xl md:text-6xl text-4xl text-start">
-                                Our Services
+                              Comming Soon
                             </animated.div>
                             <animated.div style={animateSpring4} className=" flex justify-end w-2/6  md:text-base text-xs items-center ">
-                                At SpareRoom, we go beyond offering exceptional products; we offer a suite of services designed to elevate your interior design experience.
-                                Our goal is to assist you at every step of your design journey, ensuring that you achieve the vision you have for your dream space.
+                                {/* At SpareRoom, we go beyond offering exceptional products; we offer a suite of services designed to elevate your interior design experience.
+                                Our goal is to assist you at every step of your design journey, ensuring that you achieve the vision you have for your dream space. */}
                             </animated.div>
                         </div>
                         <div className="flex w-full " >

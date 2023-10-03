@@ -93,10 +93,10 @@ export default function About() {
                             <div className="flex flex-wrap md:text-base text-xs w-full py-5">
                                 SpareRoom was founded by a group of design enthusiasts who recognized the transformative power of a well-curated living space. Beginning as a small venture in a local garage, our journey has been one of growth, learning, and an unyielding dedication to our customers.
                             </div>
-                            <Link className="flex items-end pb-4 md:text-base text-xs flex-grow font-barlow" href={"/about"}>
+                            <div className="flex items-end pb-4 md:text-base text-xs flex-grow font-barlow" >
                                 Over the years, we&apos;ve grown into a trusted platform offering a diverse range of handpicked furniture, decor, and accessories. Our focus has always been to provide high-quality, stylish solutions that suit various tastes and preferences.
 
-                            </Link>
+                            </div>
 
                         </div>
                     </div>

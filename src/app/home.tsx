@@ -108,24 +108,20 @@ function HomeClientComponent() {
                     </div>
                 </Banner>
 
-
-
-
                 <MyDiv customCssPicOuter={'flex justify-end absolute top-0 w-full md:p-10 h-screen'}
                     picOpp={true} customCssPicInner={'w-1/4 h-4/6 rounded-md dark:opacity-80 opacity-95 '} backgroundImageName={"background/pictures-01.png"} >
                     <div className="flex min-h-fit flex-col font-barlow z-10 ">
-
                         <div className="flex h-2/4 w-full justify-start py-10 ">
                             <div className="flex flex-col w-3/6 ">
-                                <div className="md:text-base text-xs  ">
+                                <ViewDetectAnimation  styles="md:text-base text-xs  " direction={"X"}  speed={500} level={10} to={0} repeat={true}>
                                     Crafting Dreams, Enhancing Lives
-                                </div>
-                                <div className=" lg:text-6xl md:text-4xl text-2xl   ">
+                                </ViewDetectAnimation>
+                                <ViewDetectAnimation styles=" lg:text-6xl md:text-4xl text-2xl   " direction={"Y"} speed={1000} level={10} to={0} repeat={true}>
                                     About us
-                                </div>
-                                <div className="flex flex-wrap md:text-base text-xs w-full py-5">
+                                </ViewDetectAnimation>
+                                <ViewDetectAnimation styles="flex flex-wrap md:text-base text-xs w-full py-5" direction={"Y"} speed={1500} level={10} to={0} repeat={true}>
                                     We are more than an e-commerce platform; we&apos;re a team of design enthusiasts, creators, and visionaries dedicated to helping you curate a space that resonates with your unique style and personality.
-                                </div>
+                                </ViewDetectAnimation>
                                 <Link className="flex items-end pb-4 md:text-4xl text-2xl flex-grow font-italianno" href={"/about"}>
                                     learn more
                                 </Link>
@@ -135,7 +131,6 @@ function HomeClientComponent() {
                         <div className="flex flex-grow justify-center  ">
                             <Trophy />
                         </div>
-
                     </div>
                 </MyDiv>
 
