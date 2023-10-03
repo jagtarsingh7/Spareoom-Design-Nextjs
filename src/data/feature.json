@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Expert Builders",
+      "description": "Our team of experienced builders are skilled in a wide range of construction techniques, from traditional to cutting-edge.",
+      "icon": "worker5.jpg"
+    },
+    {
+      "title":" Quality Materials",
+      "description":" We use only the highest-quality materials in our projects, ensuring that our buildings are not only beautiful, but also built to last.",
+      "icon": "worker2.jpg"
+    },
+    {
+      "title": "Custom Designs",
+      "description": "We work closely with our clients to create custom designs that meet their unique needs and preferences, resulting in truly one-of-a-kind buildings.",
+      "icon": "site3.jpg"
+    }
+]

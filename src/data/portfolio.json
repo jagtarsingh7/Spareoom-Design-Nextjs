@@ -1,0 +1,9 @@
+[
+    { "id": 1, "title": "Luxury Custom Home", "image": "path/to/image1.jpg", "category": "Custom Home" },
+    { "id": 2, "title": "Luxury Custom Home", "image": "path/to/image1.jpg", "category": "Custom Home" },
+    { "id": 3, "title": "Luxury Custom Home", "image": "path/to/image1.jpg", "category": "Custom Home" },
+    { "id": 4, "title": "Luxury Custom Home", "image": "path/to/image1.jpg", "category": "Custom Home" },
+    { "id": 5, "title": "Luxury Custom Home", "image": "path/to/image1.jpg", "category": "Custom Home" },
+    { "id": 6, "title": "Luxury Custom Home", "image": "path/to/image1.jpg", "category": "Custom Home" }
+
+  ]

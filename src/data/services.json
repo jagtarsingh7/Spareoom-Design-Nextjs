@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Building Engineering",
+    "description1": "We specialize in building engineering, offering our expertise in the design, analysis, and construction of various types of buildings.",
+    "description2":"Our services encompass structural engineering, ensuring the stability and integrity of the building's framework.",
+    "description3":"We provide architectural design services, creating aesthetically pleasing and functional building designs.",
+    "description4":"Our team ensures strict compliance with building codes and regulations to guarantee the safety and legality of the structures we work on.",
+    "description5":"We combine technical knowledge and innovative solutions to deliver high-quality buildings that meet client requirements.",
+    "description6":"With our extensive experience in building engineering, we are equipped to handle diverse projects, ranging from residential and commercial buildings to industrial and institutional structures.",
+    "time": 1,
+    "icon": "/images/service2.jpg"
+  },
+  {
+    "title": "Civil Engineering",
+    "description1": "Our civil engineering services cover a wide range of projects, including the design, construction, and maintenance of infrastructure such as buildings, industrial facilities, landmarks, and water supply systems.",
+    "description2": "We have expertise in managing every aspect of civil engineering projects, from initial surveying and site preparation to the execution and completion of the project.",
+    "description3":"Our team combines technical knowledge, creativity, and practicality to deliver efficient and effective solutions for diverse civil engineering challenges.",
+    "description4":"We prioritize the integration of sustainable and environmentally friendly practices in our civil engineering projects, ensuring long-term durability and minimal environmental impact.",
+    "description5":"With our experience and expertise, we are capable of handling projects of various scales and complexities, adapting our approach to meet the unique requirements of each project.",
+    "description6":"Our commitment to quality, safety, and client satisfaction is at the core of our civil engineering services, as we strive to deliver exceptional results that meet and exceed expectations",
+    "time": 2,
+    "icon": "/images/service3.jpg"
+  },
+  {
+    "title": "Electrical Installations",
+    "description1": "Our expertise lies in providing comprehensive electrical installation services for construction projects, encompassing the design and installation of electrical systems, wiring, lighting, and power distribution.",
+    "description2": "We prioritize safety and adhere to industry regulations and safety standards to ensure that all electrical installations are compliant and meet the necessary safety requirements.",
+    "description3":"Our team of experienced professionals is equipped with the knowledge and skills to handle complex electrical installations, regardless of project size or scope.",
+    "description4":"We focus on delivering efficient electrical systems that are not only reliable but also energy-efficient, helping clients reduce energy consumption and costs.",
+    "description5":"We work closely with clients to understand their specific requirements and tailor our electrical solutions to meet their needs, ensuring a customized and seamless installation process.",
+    "description6":"Our commitment to quality and attention to detail ensures that all electrical installations are of the highest standard, delivering reliable and long-lasting results for our clients.",
+    "time": 3,
+    "icon": "/images/build.jpg"
+  },
+  {
+    "title": "Plumbing Installations",
+    "description1": "Our expertise lies in providing comprehensive plumbing and water installation services for construction projects, encompassing the design and installation of plumbing systems, water supply lines, drainage systems, and fixtures.",
+    "description2": "We prioritize the proper functioning of water supply and waste management systems, ensuring efficient and reliable plumbing infrastructure for buildings.",
+    "description3":"Our team of skilled plumbers and technicians is experienced in handling various plumbing projects, from residential buildings to commercial and industrial facilities.",
+    "description4":"We ensure that all plumbing installations are compliant with building codes and regulations, meeting the highest standards of quality and safety.",
+    "description5":"We work closely with clients to understand their specific requirements and tailor our plumbing solutions to meet their needs, providing customized and efficient plumbing systems.",
+    "description6":"Our commitment to excellence and attention to detail ensures that all plumbing and water installations are carried out with precision and reliability, resulting in long-lasting and efficient systems for our clients.",
+    "time": 4,
+    "icon": "/images/plumb.jpg"
+  },
+  {
+    "title": "Landscaping",
+    "description1": "Our landscaping services aim to transform outdoor spaces into visually stunning and functional areas, enhancing their overall aesthetic appeal.",
+    "description2":"We specialize in designing and implementing landscaping plans that incorporate various elements, such as gardens, lawns, pathways, and outdoor amenities.",
+    "description3":"Our team of experienced landscapers considers factors like sustainability and water conservation in every project, ensuring environmentally friendly and efficient landscape designs.",
+    "description4":"We work closely with our clients to understand their preferences and requirements, tailoring our landscaping solutions to meet their specific needs.",
+    "description5":"Whether it's a residential, commercial, or public space, we have the expertise to create visually appealing landscapes that complement the surrounding architecture and environment.",
+    "description6":"With attention to detail and a focus on quality craftsmanship, we strive to deliver landscaping projects that exceed our clients' expectations and provide long-lasting beauty and enjoyment.",
+    "time": 6,
+    "icon": "/images/landscaping.jpg"
+  }
+]

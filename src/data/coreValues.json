@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Smart Design",
+      "description": "Architects and Engineers collaborate to create eye-catching designs and best value solutions.",
+      "time":1
+    },
+    {
+      "title": "General Contracting",
+      "description": "We’ll deliver an exceptional project with a headache-free owner experience. We have the track record to prove it.",
+      "time":2
+    },
+    {
+      "title": "Construction Management",
+      "description": "We’ll manage every contract for you, ensuring you realize maximum contract efficiency in your project.",
+      "time":3
+    },
+    {
+      "title": "Energy Optimization",
+      "description": "We will help you achieve long-term cost efficiencies through smart choices of materials, building systems and designs.",
+      "time":4
+    },
+    {
+      "title": "Building Services",
+      "description": "Building services are central to sustainable systems that minimize the use of resources consumed and environmental impact.",
+      "time":5
+    },
+    {
+      "title": "Interior Design",
+      "description": "We find the balance between form and function to create spaces that inspire is truly motivating.",
+      "time":6
+    }
+  ]
