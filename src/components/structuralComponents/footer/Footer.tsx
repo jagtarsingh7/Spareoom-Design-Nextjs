@@ -1,7 +1,7 @@
 
 function Footer() {
     return (
-        <div className="dark:bg-black w-full p-10 ">
+        <div className="dark:bg-black border-2 dark:border-black border-white w-full">
             <div className="container mx-auto ">
                 <footer className=" dark:text-slate-100  text-black mt-20 p-5">
                     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -12,30 +12,9 @@ function Footer() {
                                     <img src="images/logo/night.svg" className="dark:block hidden h-14 mr-3" alt="Spareöom Logo" />
                                 </a>
                             </div>
-                            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                            <div className="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-1">
                                 <div>
-                                    <h2 className="mb-6 text-sm font-semibold uppercase">Resources</h2>
-                                    <ul className="font-medium">
-                                        <li className="mb-4">
-                                            <a href="https://Spareöom.com/" className="hover:underline">Spareöom</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 className="mb-6 text-sm font-semibold uppercase ">Follow us</h2>
-                                    <ul className="font-medium">
-                                        <li className="mb-4">
-                                            <a href="https://github.com/themesberg/Spareöom" className="hover:underline ">Github</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
+                                    
                                     <h2 className="mb-6 text-sm font-semibold uppercase">Legal</h2>
                                     <ul className="font-medium">
                                         <li className="mb-4">

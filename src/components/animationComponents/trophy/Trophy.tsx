@@ -7,13 +7,13 @@ import CountUp from "../countUp/CountUp";
 function Trophy() {
     const [trophyRef, trophyAnimated] = useInView()
     return (
-        <div className='flex items-start '>
+        <div className='flex h-full items-start '>
             <section ref={trophyRef} id="trophy" className=" w-full">
                 <div className="mx-auto w-full px-4 py-12 sm:px-6 md:py-16 lg:px-8">  
                    <div className="mt-8 sm:mt-12">
                         <dl
                             className="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:divide-x sm:divide-gray-200">
-                            <div className="flex flex-col px-4 py-8 text-center">
+                            <div className="flex flex-col px-4 sm:py-8 text-center">
                                 <dt className="order-last text-lg font-medium text-gray-500">
                                     Completed Projects
                                 </dt>

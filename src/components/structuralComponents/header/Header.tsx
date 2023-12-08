@@ -157,8 +157,7 @@ function Header() {
     }
     return (
         <header>
-
-            <div className="container mx-auto h-full absolute top-0 z-20">
+            <div className="container mx-auto absolute top-0 z-20">
                 <div className='flex flex-col z-10 border-b'>
                     <div className='flex justify-between p-3 '>
                         <Link href="/" className="my-auto mr-auto">
@@ -175,9 +174,7 @@ function Header() {
                             <li onClick={() => { setIsSubMenuOpen(true), setSubHead(10) }} >
                                 <Link href="/" className="relative block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white" aria-current="page">Home</Link>
                             </li>
-                            <li onClick={() => setIsSubMenuOpen(true)}>
-                                <Link href="/about" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">About</Link>
-                            </li>
+                           
                             <li onClick={() => setIsSubMenuOpen(true)} >
                                 <Link href="/projects" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  text-black dark:text-white">Projects</Link>
                             </li>
@@ -185,9 +182,12 @@ function Header() {
                                 <Link href="/products" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  text-black dark:text-white">Products</Link>
                             </li>
                             <li onClick={() => setIsSubMenuOpen(true)}>
-                                <Link href="/contact" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Contact</Link>
+                                <Link href="/sustainabilty" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Sustainabilty</Link>
                             </li>
-                            <li>
+                            <li onClick={() => setIsSubMenuOpen(true)}>
+                                <Link href="/about" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">About</Link>
+                            </li>
+                            {/* <li>
                                 <div className='flex '>
                                     <Link href="/services" onClick={() => setSubHead(0)} className="block  py-2 pr-4 pl-3 lg:hover:text-primary-700  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Services</Link>
                                     <div className='relative'>
@@ -270,14 +270,11 @@ function Header() {
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> */}
                         </ul>
                         {isMenuOpen &&
                             <ViewDetectAnimation styles='flex w-screen sm:hidden ' direction={'X'} speed={1000} level={100} to={0} repeat={true}>
                                 <ul className="flex flex-col w-full lg:space-x-8 dark:bg-black dark:opacity-70 lg:mt-0 font-italianno">
-                                    <li onClick={() => setIsSubMenuOpen(true)}>
-                                        <Link href="/about" className="block py-2 pr-4 pl-3 border-b border-gray-100   hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">About</Link>
-                                    </li>
                                     <li onClick={() => setIsSubMenuOpen(true)} >
                                         <Link href="/projects" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  text-black dark:text-white">Projects</Link>
                                     </li>
@@ -285,10 +282,13 @@ function Header() {
                                         <Link href="/products" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  text-black dark:text-white">Products</Link>
                                     </li>
                                     <li onClick={() => setIsSubMenuOpen(true)}>
-                                        <Link href="/contact" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Contact</Link>
+                                        <Link href="/contact" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Sustainabilty</Link>
+                                    </li>
+                                    <li onClick={() => setIsSubMenuOpen(true)}>
+                                        <Link href="/contact" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">About</Link>
                                     </li>
 
-                                    <li>
+                                    {/* <li>
                                         <div className='flex border-b border-gray-100 '>
                                             <Link href="/services" onClick={() => setSubHead(0)} className="block py-2 pr-4 pl-3 lg:hover:text-primary-700  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0
                                              text-black dark:text-white">Services</Link>
@@ -372,13 +372,12 @@ function Header() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </ViewDetectAnimation>
                         }
                     </div>
                 </div>
-
             </div>
         </header>
 

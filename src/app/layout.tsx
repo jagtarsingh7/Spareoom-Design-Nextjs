@@ -40,8 +40,8 @@ const roboto_mono = Roboto_Mono({
 
 
 export const metadata: Metadata = {
-  title: 'SpareOom Ltd - Construction Services and Solutions | Company Overview',
-  description: 'Discover SpareOom Ltd, a leading construction company providing exceptional services and solutions. Established in 2012, we prioritize quality, safety, and customer satisfaction. Our team of experienced professionals delivers projects of the highest standard, fostering strong relationships and embracing sustainability. Choose SpareOom for excellence in construction.',
+  title: 'SpareOom Ltd  Company Overview',
+  description: 'Discover SpareOom Ltd, a leading company providing exceptional services and solutions. Choose SpareOom for excellence in designing houses.',
 }
 
 export default function RootLayout({

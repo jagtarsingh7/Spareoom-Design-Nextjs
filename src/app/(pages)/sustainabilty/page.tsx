@@ -1,8 +1,5 @@
 'use client'
 import { useContext, useEffect, useRef, useState } from "react";
-import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
-import ScrollButton from "../../../components/structuralComponents/scrollButton/ScrollButton";
-import services from "../../../data/services.json"
 import ViewDetectAnimation from "../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation";
 import MyContext from "../../../context/MyContext";
 import Banner from "../../../components/structuralComponents/banner/Banner";
@@ -11,6 +8,7 @@ import Image from "next/image";
 import Header from "@component/components/structuralComponents/header/Header";
 import { animated, useChain, useSpring, useSpringRef } from "@react-spring/web";
 import MyDiv from "@component/components/structuralComponents/mydiv/MyDiv";
+import Link from "next/link";
 
 function Services() {
     const { subHead } = useContext(MyContext)
@@ -55,15 +53,15 @@ function Services() {
 
             <Banner
                 headerOn={<Header></Header>}
-                customCssPicInner={'w-1/2 dark:opacity-70 opacity-90'}
+                customCssPicInner={'w-full dark:opacity-70 opacity-90'}
                 customCssPicOuter={'flex justify-end absolute top-0 -z-10 h-screen w-full dark:bg-black'}
                 backgroundImageName={"background/pictures-02.png"}
             >
-                <div className="flex h-full items-center">
+                <div className="flex h-full items-center ">
                     <div className="mt-10 flex flex-col w-full  " >
                         <div className="flex w-full justify-between " >
-                            <animated.div style={animateSpring2} className=" font-barlow flex flex-grow lg:text-8xl md:text-6xl text-4xl text-start">
-                              Comming Soon
+                            <animated.div style={animateSpring2} className=" font-dancing flex flex-grow lg:text-6xl md:text-3xl text-lg text-start">
+                                Creating Sustainable Spaces
                             </animated.div>
                             <animated.div style={animateSpring4} className=" flex justify-end w-2/6  md:text-base text-xs items-center ">
                                 {/* At SpareRoom, we go beyond offering exceptional products; we offer a suite of services designed to elevate your interior design experience.
@@ -71,8 +69,8 @@ function Services() {
                             </animated.div>
                         </div>
                         <div className="flex w-full " >
-                            <animated.div style={animateSpring3} className=" flex w-3/6  text-start lg:text-3xl md:text-xl text-base ">
-                                Tailored Solutions for Your Design Journey
+                            <animated.div style={animateSpring3} className=" flex font-jo w-3/6  text-start lg:text-xl md:text-lg text-base ">
+                            Redefining Interior Design for a Greener Tomorrow
                             </animated.div>
                         </div>
                     </div>
@@ -133,28 +131,18 @@ function Services() {
                 <div className="flex justify-end h-screen w-full">
                     <div className="flex flex-col h-full w-4/6 items-center justify-center ">
                         <div className="flex justify-center md:text-5xl sm:text-lg text-sm font-dancing ">
-                            Design Consultation
+                        Our Approach to Sustainability
                         </div>
                         <div className="flex flex-col  divide-y-2 divide-gray-100 py-5 ">
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
                                 <div className="md:flex-grow">
-                                <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="text-xl font-medium title-font mb-2">Begin your design journey with a personalized consultation.</h2>
-                                    </ViewDetectAnimation>
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">Begin your design journey with a personalized consultation. Our expert designers are here to understand your style, preferences, and aspirations for your space</p>
+                                        <h2 className="text-xl font-medium title-font mb-2"> We meticulously select materials that prioritize sustainability without compromising on quality. From reclaimed wood to recycled fabrics and low-impact paints, our designs embrace materials that minimize carbon footprint and promote a healthier living environment. </h2>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
-                                <div className="md:flex-grow">
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="text-xl font-medium title-font mb-2">Begin your design journey with a personalized consultation.</h2>
-                                    </ViewDetectAnimation>
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">Begin your design journey with a personalized consultation.</p>
-                                    </ViewDetectAnimation>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -165,70 +153,63 @@ function Services() {
                 <div className="flex justify-start h-screen w-full">
                     <div className="flex flex-col h-full w-4/6 items-center justify-center ">
                         <div className="flex justify-center md:text-5xl sm:text-lg text-sm font-dancing ">
-                            Design Consultation
+                        Collaborating for Change
                         </div>
                         <div className="flex flex-col  divide-y-2 divide-gray-100 py-5 ">
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
                                 <div className="md:flex-grow">
-                                <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="text-xl font-medium title-font mb-2">Begin your design journey with a personalized consultation.</h2>
-                                    </ViewDetectAnimation>
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">Begin your design journey with a personalized consultation. Our expert designers are here to understand your style, preferences, and aspirations for your space</p>
+                                        <h2 className="text-xl font-medium title-font mb-2">Partnering with like-minded businesses and embracing collaborations allows us to amplify our impact. Together, we strive to create a world where sustainability is at the heart of every design decision. </h2>
                                     </ViewDetectAnimation>
+                                    
                                 </div>
                             </div>
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
-                                <div className="md:flex-grow">
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="text-xl font-medium title-font mb-2">Begin your design journey with a personalized consultation.</h2>
-                                    </ViewDetectAnimation>
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">Begin your design journey with a personalized consultation.</p>
-                                    </ViewDetectAnimation>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             </MyDiv>
-            <MyDiv customCssPicOuter={'flex items-start absolute top-0 h-screen w-full p-10'}
-                picOpp={true} customCssPicInner={'w-full h-2/6 rounded-sm'} backgroundImageName={"background/pictures-02.png"} >
-                <div className="flex justify-center h-screen w-full">
-                    <div className="flex flex-col h-full w-4/6 items-low justify-end text-center ">
-                        <div className="flex justify-center md:text-5xl sm:text-lg text-sm font-dancing ">
-                            Design Consultation
-                        </div>
-                        <div className="flex flex-col  divide-y-2 divide-gray-100 py-5 ">
-                            <div className="py-4 flex flex-wrap md:flex-nowrap">
-                                <div className="md:flex-grow">
-                                <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="text-xl font-medium title-font mb-2">Begin your design journey with a personalized consultation.</h2>
-                                    </ViewDetectAnimation>
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">Begin your design journey with a personalized consultation. Our expert designers are here to understand your style, preferences, and aspirations for your space</p>
-                                    </ViewDetectAnimation>
-                                </div>
+            <MyDiv picOpp={false} customCssPicInner={undefined} customCssPicOuter={undefined} backgroundImageName={""} >
+                <section className=" body-font">
+                    <div className="container px-5 py-24 mx-auto">
+                        <ViewDetectAnimation styles="flex flex-col text-center w-full mb-20" direction={"Y"} speed={1000} level={-10} to={0} repeat={false}>
+                            <h2 className="text-xstracking-widest font-medium title-font mb-1">Discover the Art of Home Styling</h2>
+                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 ">Your Path to Inspired Living</h1>
+                            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Welcome to the heart of SpareRoom, where style meets functionality, and every piece tells a unique design story. Our carefully curated product range brings you a diverse selection of furniture, decor, and accessories to transform your living space into a reflection of your personality and taste.</p>
+                        </ViewDetectAnimation>
+                        <ViewDetectAnimation direction={"Y"} speed={1000} level={10} to={0} repeat={false} styles="flex flex-wrap">
+                            <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                <h2 className=" font-medium title-font mb-2">Furniture</h2>
+                                <p className="leading-relaxed text-base mb-4">Discover our collection of finely crafted furniture that combines form and function seamlessly. From elegant sofas that invite relaxation to practical yet stylish dining tables, our furniture offerings cater to various tastes and preferences.</p>
+                               
                             </div>
-                            <div className="py-4 flex flex-wrap md:flex-nowrap">
-                                <div className="md:flex-grow">
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="text-xl font-medium title-font mb-2">Begin your design journey with a personalized consultation.</h2>
-                                    </ViewDetectAnimation>
-                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <p className="leading-relaxed">Begin your design journey with a personalized consultation.</p>
-                                    </ViewDetectAnimation>
-                                </div>
+                            <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                <h2 className="text-lg sm:text-xl  font-medium title-font mb-2">Textiles & Fabrics</h2>
+                                <p className="leading-relaxed text-base mb-4">Add comfort and warmth to your home with our range of textiles and fabrics. From sumptuous cushions to cozy throws and luxurious curtains, our textile collection allows you to personalize your space with softness and style.</p>
+                               
                             </div>
-                        </div>
+                            <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                <h2 className="text-lg sm:text-xl font-medium title-font mb-2">Bedroom Essentials</h2>
+                                <p className="leading-relaxed text-base mb-4">Create your personal sanctuary with our bedroom essentials. Discover comfortable bedding, thoughtfully designed nightstands, spacious dressers, and more to make your bedroom a haven of relaxation and style.</p>
+                               
+                            </div>
+                            <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                <h2 className="text-lg sm:text-xl  font-medium title-font mb-2">Special Collections</h2>
+                                <p className="leading-relaxed text-base mb-4">Explore our special collections curated to cater to specific themes, seasons, or design trends. These collections feature a carefully selected assortment of products that harmonize to bring a unique design aesthetic to your space.</p>
+                             
+                            </div>
+                        </ViewDetectAnimation>
+                        <Link href={"/products"}>
+                             <button className="flex mx-auto mt-16 text-white  py-2 px-8 focus:outline-none hov-600  text-lg border rounded-xl hover:bg-red-950 font-dancing bg-red-800 bg">Products</button>
+
+                        </Link>
                     </div>
-                </div>
+                </section>
+
             </MyDiv>
-            <div className="dark:bg-black w-full p-20 ">
-                    <div className="container mx-auto ">
-                        <Footer />
-                    </div>
-                </div>
+            <Footer />
         </div>
     );
 }

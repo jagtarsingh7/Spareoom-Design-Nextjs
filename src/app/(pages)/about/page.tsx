@@ -79,29 +79,27 @@ export default function About() {
                 </div>
             </Banner>
 
-            <MyDiv customCssPicOuter={'flex justify-end absolute top-0 w-full md:p-10 h-screen items-center '}
-                picOpp={true} customCssPicInner={'w-2/4 h-6/6 rounded-md dark:opacity-80  '} backgroundImageName={"background/pictures-02.png"} >
+            <MyDiv customCssPicOuter={'flex justify-end absolute top-0 w-full md:p-10 h-screen items-center -z-10'}
+                picOpp={true} 
+                customCssPicInner={'w-2/4 h-6/6 rounded-md dark:opacity-80  '}
+                backgroundImageName={"background/pictures-02.png"}
+                >
+
                 <div className="flex h-full flex-col justify-between font-barlow z-10 ">
-                    <div className="flex flex-grow w-full justify-start  ">
+                    <div className="flex flex-grow w-full justify-start items-center border">
                         <div className="flex flex-col w-3/6 ">
                             <div className="md:text-base text-xs  ">
-
                             </div>
-                            <ViewDetectAnimation styles=" lg:text-6xl md:text-4xl text-2xl   " direction={"X"} speed={500} level={-10} to={0} repeat={true}>
+                            <ViewDetectAnimation styles=" lg:text-6xl md:text-4xl text-2xl" direction={"X"} speed={500} level={-10} to={0} repeat={true}>
                                 Our Story
                             </ViewDetectAnimation>
                             <div className="flex flex-wrap md:text-base text-xs w-full py-5">
                                 SpareRoom was founded by a group of design enthusiasts who recognized the transformative power of a well-curated living space. Beginning as a small venture in a local garage, our journey has been one of growth, learning, and an unyielding dedication to our customers.
                             </div>
-                            <div className="flex items-end pb-4 md:text-base text-xs flex-grow font-barlow" >
+                            <div className="flex items-start pb-4 md:text-base text-xs flex-grow font-barlow" >
                                 Over the years, we&apos;ve grown into a trusted platform offering a diverse range of handpicked furniture, decor, and accessories. Our focus has always been to provide high-quality, stylish solutions that suit various tastes and preferences.
-
                             </div>
-
                         </div>
-                    </div>
-                    <div className="flex h-1/4 justify-center  ">
-
                     </div>
                 </div>
             </MyDiv>
@@ -223,9 +221,9 @@ export default function About() {
 
             </MyDiv> */}
 
-            <MyDiv customCssPicOuter={'flex justify-start items-center absolute top-0 h-screen w-full p-10'}
+            <MyDiv customCssPicOuter={'flex justify-start items-center absolute top-0 h-screen w-full p-10 -z-10'}
                 picOpp={false} customCssPicInner={'w-1/3 h-4/6 rounded-sm'} backgroundImageName={"background/pictures-05.png"} >
-                <div className="flex  min-h-screen justify-center text-center w-full p-10 items-center ">
+                <div className="flex  min-h-screen justify-center text-center w-full p-10 items-center z-10 ">
                     <div className="flex flex-col  h-full items-center  w-4/6 ">
                         <div className="text-2xl">
                         </div>
@@ -233,9 +231,7 @@ export default function About() {
                             Our Values
                         </div>
                         <div className=" mt-4 divide-y-2 divide-gray-100">
-
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
-
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
                                         <h2 className="md:text-3xl text-2xl font-italianno title-font mb-2">Quality First</h2>
@@ -281,8 +277,8 @@ export default function About() {
                 </div>
             </MyDiv>
 
-            <MyDiv customCssPicOuter={'flex items-start absolute top-0 h-screen w-full p-10 '}
-                picOpp={true} customCssPicInner={'w-full md:h-3/6 h2/6 rounded-sm'} backgroundImageName={"background/pictures-02.png"} >
+            <MyDiv customCssPicOuter={'flex items-start absolute top-0 h-screen w-full p-10 -z-10'}
+                picOpp={true} customCssPicInner={'w-full md:h-4/6 h-2/6 rounded-sm'} backgroundImageName={"background/pictures-02.png"} >
                 <div className="flex justify-center h-screen w-full z-10">
                     <div className="flex flex-col h-full w-5/6 items-low justify-end mt-5 text-center ">
                         <div className="flex justify-center md:text-5xl sm:text-2xl text-lg font-barlow ">
@@ -301,9 +297,7 @@ export default function About() {
                     </div>
                 </div>
             </MyDiv>
-
             <Footer />
-
         </div>
     )
 }

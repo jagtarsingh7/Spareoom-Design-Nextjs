@@ -11,19 +11,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: 'https://SpareOom.com/services',
+            url: 'https://SpareOom.com/sustainability',
             lastModified: new Date(),
         },
         {
-            url: 'https://SpareOom.com/development',
+            url: 'https://SpareOom.com/products',
             lastModified: new Date(),
         },
         {
-            url: 'https://SpareOom.com/services',
-            lastModified: new Date(),
-        },
-        {
-            url: 'https://SpareOom.com/policy',
+            url: 'https://SpareOom.com/projects',
             lastModified: new Date(),
         },
     ]

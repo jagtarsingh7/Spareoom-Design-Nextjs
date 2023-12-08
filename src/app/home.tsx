@@ -4,7 +4,6 @@ import QuoteForm from "../components/dataComponents/quoteForm/QuoteForm";
 import Trophy from "../components/animationComponents/trophy/Trophy";
 import Footer from "../components/structuralComponents/footer/Footer";
 import ViewDetectAnimation from "../components/animationComponents/viewDetectAnimation/ViewDetectAnimation";
-import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import Loading from "./loading";
 import MyContext from "../context/MyContext";
@@ -66,23 +65,18 @@ function HomeClientComponent() {
         from: { opacity: 0, transform: `translateY(50%)` },
         config: { duration: 1000 },
     });
-
-
-    useChain([propAnimation1, propAnimation2, propAnimation3, propAnimation4])
-
-
+    useChain([propAnimation3, propAnimation4, propAnimation1, propAnimation4])
     return (
         loader ?
             <div className="">
                 <Banner
                     headerOn={<Header></Header>}
-                    customCssPicInner={'w-1/2 dark:opacity-70 '}
                     customCssPicOuter={'flex justify-start absolute top-0 -z-10 h-screen w-full dark:bg-black'}
+                    customCssPicInner={'w-1/2 dark:opacity-70'}
                     backgroundImageName={"background/pictures-02.png"}
                 >
                     <div className="flex h-full items-center">
-                        <div className="mt-10 flex flex-col w-full   " >
-
+                        <div className="mt-10 flex flex-col w-full" >
                             <div className="flex w-full justify-between " >
                                 <animated.div style={animateSpring3} className=" font-barlow flex flex-grow lg:text-8xl md:text-6xl text-4xl text-start">
                                     Your Destination
@@ -108,12 +102,16 @@ function HomeClientComponent() {
                     </div>
                 </Banner>
 
-                <MyDiv customCssPicOuter={'flex justify-end absolute top-0 w-full md:p-10 h-screen'}
-                    picOpp={true} customCssPicInner={'w-1/4 h-4/6 rounded-md dark:opacity-80 opacity-95 '} backgroundImageName={"background/pictures-01.png"} >
-                    <div className="flex min-h-fit flex-col font-barlow z-10 ">
-                        <div className="flex h-2/4 w-full justify-start py-10 ">
+                <MyDiv
+                    customCssPicOuter={'flex justify-end absolute top-0 w-full md:px-5 h-screen -z-10'}
+                    customCssPicInner={'w-2/6 h-4/6 rounded-md dark:opacity-80 opacity-95 '}
+                    backgroundImageName={"background/pictures-01.png"}
+                    picOpp={true}
+                >
+                    <div className="flex h-full flex-col font-barlow ">
+                        <div className="flex h-4/4 w-full justify-start py-10 ">
                             <div className="flex flex-col w-3/6 ">
-                                <ViewDetectAnimation  styles="md:text-base text-xs  " direction={"X"}  speed={500} level={10} to={0} repeat={true}>
+                                <ViewDetectAnimation styles="md:text-base text-xs  " direction={"X"} speed={500} level={10} to={0} repeat={true}>
                                     Crafting Dreams, Enhancing Lives
                                 </ViewDetectAnimation>
                                 <ViewDetectAnimation styles=" lg:text-6xl md:text-4xl text-2xl   " direction={"Y"} speed={1000} level={10} to={0} repeat={true}>
@@ -125,7 +123,6 @@ function HomeClientComponent() {
                                 <Link className="flex items-end pb-4 md:text-4xl text-2xl flex-grow font-italianno" href={"/about"}>
                                     learn more
                                 </Link>
-
                             </div>
                         </div>
                         <div className="flex flex-grow justify-center  ">
@@ -134,21 +131,26 @@ function HomeClientComponent() {
                     </div>
                 </MyDiv>
 
-                <MyDiv customCssPicOuter={'flex justify-center absolute top-0 h-screen w-full p-10'}
-                    picOpp={true} customCssPicInner={'w-full md:h-3/6 h-1/4 rounded-md dark:opacity-80 opacity-95 '} backgroundImageName={"background/pictures-07.png"} >
-                    <div className="flex min-h-screen flex-col justify-end z-10 ">
+                <MyDiv
+                    customCssPicOuter={'flex justify-center items-center  absolute top-0 h-screen w-full md:px-5 -z-10'}
+                    customCssPicInner={'w-3/4 h-3/4 rounded-md dark:opacity-80 opacity-95 '}
+                    backgroundImageName={"background/pictures-07.png"}
+                    picOpp={true} >
+                    <div className="flex min-h-screen flex-col justify-end ">
                         <div className="h-1/4">
                             <SmallCoreValues />
                         </div>
-                        <Link className="flex justify-center hover:text-red-900  md:text-3xl text-2xl  font-dancing pt-10 pb-14" href={"/services"}>
+                        <Link className="flex justify-center hover:text-red-900  md:text-3xl text-2xl  font-dancing pt-10 pb-14" href={"/about"}>
                             Explore more
                         </Link>
                     </div>
                 </MyDiv>
 
-                <MyDiv customCssPicOuter={'flex justify-start absolute top-0 h-screen w-full md:px-10 py-20'}
-                    picOpp={true} customCssPicInner={' md:w-1/3 w-2/4 h-5/6 rounded-md dark:opacity-80 opacity-95'} backgroundImageName={"background/pictures-02.png"} >
-                    <div className="flex w-full justify-end m-14 ">
+                <MyDiv customCssPicOuter={'flex justify-start absolute top-0 h-screen w-full md:px-10 py-20 -z-10'}
+                    picOpp={true}
+                    customCssPicInner={' md:w-1/3 w-2/4 h-5/6 rounded-md dark:opacity-80 opacity-95'}
+                    backgroundImageName={"background/pictures-02.png"} >
+                    <div className="flex w-full justify-end m-14 z-10 ">
                         <div className=" w-2/3 h-full flex  ">
                             <section className=" body-font overflow-hidden">
                                 <div className="container px-5 py-16 mx-auto">
@@ -177,9 +179,11 @@ function HomeClientComponent() {
                     </div>
                 </MyDiv>
 
-                <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full py-10 md:pt-5'}
-                    picOpp={true} customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'} backgroundImageName={"background/pictures-04.png"} >
-                    <div className="flex min-h-screen w-full  p-10 z-10">
+                <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full py-10 md:pt-5 -z-10'}
+                    picOpp={true}
+                    customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'}
+                    backgroundImageName={"background/pictures-04.png"} >
+                    <div className="flex min-h-screen w-full p-10 z-50 border-blue-600">
                         <div className="flex flex-col h-full w-4/6 ">
                             <div className="md:text-2xl text-md font-barlow ">
                                 Its time
@@ -187,7 +191,6 @@ function HomeClientComponent() {
                             <div className="md:text-4xl text-xl font-barlow ">
                                 to Discuss your project
                             </div>
-
                             <div className="flex items-end pb-4 text-2xl flex-grow">
                                 <QuoteForm />
                             </div>
@@ -195,6 +198,8 @@ function HomeClientComponent() {
                         </div>
                     </div>
                 </MyDiv>
+
+                
                 <Footer />
             </div>
             : (<><Loading /></>));
