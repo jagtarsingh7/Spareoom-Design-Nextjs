@@ -27,7 +27,7 @@ export default function MyDiv(props: IMyDivProp) {
                     </div>
                 </div>
             }
-            <div className='flex w-full py-10 border-8 border-yellow-200 z-20'>
+            <div className='flex w-full py-5 z-20'>
                 {loader ? (
                     <div className=" min-h-screen flex w-full container mx-auto dark:text-white text-black z-20 ">
                         {children}

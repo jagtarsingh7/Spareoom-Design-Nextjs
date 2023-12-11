@@ -1,20 +1,20 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Roboto_Mono, Dancing_Script, Barlow , Italianno } from 'next/font/google'
+import { Inter, Roboto_Mono, Dancing_Script, Barlow, Italianno } from 'next/font/google'
 import ContextComponent from '../context/ContextComponent'
 import { Suspense } from 'react'
 import Loading from './loading'
 
- 
+
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
 })
 const dancingScript = Dancing_Script({
-   subsets: ['latin'] ,
-   display: 'swap',
-   variable: '--font-dancing',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dancing',
 
 });
 
@@ -36,7 +36,7 @@ const roboto_mono = Roboto_Mono({
   display: 'swap',
   variable: '--font-roboto-mono',
 })
- 
+
 
 
 export const metadata: Metadata = {
@@ -50,15 +50,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html  lang="en" className={`${inter.variable} ${roboto_mono.variable} ${dancingScript.variable} ${barlow.variable} ${italianno.variable}`}>
+    <html lang="en" className={`${inter.variable} ${roboto_mono.variable} ${dancingScript.variable} ${barlow.variable} ${italianno.variable}`}>
       <body className={inter.className}>
         <ContextComponent>
-          <Suspense fallback={<Loading/>}>
-       
-        {children}
-        </Suspense>
+          <Suspense fallback={<Loading />}>
+            {children}
+          </Suspense>
         </ContextComponent>
-        </body>
+      </body>
     </html>
   )
 }

@@ -11,11 +11,9 @@ import Header from "@component/components/structuralComponents/header/Header";
 import { useSpring, animated, useChain, useSpringRef, useInView } from '@react-spring/web';
 import MyDiv from "@component/components/structuralComponents/mydiv/MyDiv";
 import SmallCoreValues from "@component/components/dataComponents/smallCoreValues/SmallCoreValues";
-import policies from "../data/policies.json"
 import Link from "next/link";
 
 function HomeClientComponent() {
-    const policiesValues = Object.values(policies)
 
     const [loader, setLoader] = useState(false)
     const [speed2Time, setSpeed2Time] = useState(1500)
@@ -26,7 +24,7 @@ function HomeClientComponent() {
         if (subHead != 10) {
             setTimeout(() => {
                 setLoader(true)
-            }, 2000)
+            }, 0)
         }
         else {
             setLevel2Speed(20)
@@ -66,6 +64,7 @@ function HomeClientComponent() {
         config: { duration: 1000 },
     });
     useChain([propAnimation3, propAnimation4, propAnimation1, propAnimation4])
+
     return (
         loader ?
             <div className="">
@@ -87,7 +86,6 @@ function HomeClientComponent() {
                                 </animated.div> */}
                             </div>
                             <div className="flex w-full justify-between mt-2  " >
-
                                 <animated.div className=" flex w-2/6 md:text-base text-xs text-start  py-3 ">
                                     <p>
                                         Where your dream of a beautifully designed living space comes to life.
@@ -98,7 +96,6 @@ function HomeClientComponent() {
                                 </animated.div>
                             </div>
                         </div>
-
                     </div>
                 </Banner>
 
@@ -133,7 +130,7 @@ function HomeClientComponent() {
 
                 <MyDiv
                     customCssPicOuter={'flex justify-center items-center  absolute top-0 h-screen w-full md:px-5 -z-10'}
-                    customCssPicInner={'w-3/4 h-3/4 rounded-md dark:opacity-80 opacity-95 '}
+                    customCssPicInner={'w-4/5 md:h-3/4 h-0 rounded-md dark:opacity-80 opacity-95 '}
                     backgroundImageName={"background/pictures-07.png"}
                     picOpp={true} >
                     <div className="flex min-h-screen flex-col justify-end ">
@@ -146,39 +143,7 @@ function HomeClientComponent() {
                     </div>
                 </MyDiv>
 
-                <MyDiv customCssPicOuter={'flex justify-start absolute top-0 h-screen w-full md:px-10 py-20 -z-10'}
-                    picOpp={true}
-                    customCssPicInner={' md:w-1/3 w-2/4 h-5/6 rounded-md dark:opacity-80 opacity-95'}
-                    backgroundImageName={"background/pictures-02.png"} >
-                    <div className="flex w-full justify-end m-14 z-10 ">
-                        <div className=" w-2/3 h-full flex  ">
-                            <section className=" body-font overflow-hidden">
-                                <div className="container px-5 py-16 mx-auto">
-                                    <div className="-my-8 divide-y-2 divide-gray-100">
-                                        {policiesValues.map((item, index) => (
-                                            <div key={index} className="py-4 flex flex-wrap md:flex-nowrap">
-                                                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                                    <ViewDetectAnimation direction={"Y"} level={10} speed={500} styles={""} to={0} repeat={false}>
-                                                        <span className=" font-italianno title-font md:text-3xl text-x">{item.title}</span>
-                                                    </ViewDetectAnimation>
-                                                </div>
-                                                <div className="md:flex-grow">
-                                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={"hidden md:block"} level={0} to={0} repeat={false}>
-                                                        <h2 className="md:text-lg text-md  font-barlow  title-font mb-2">{item.description1}</h2>
-                                                    </ViewDetectAnimation>
-                                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={" "} level={0} to={0} repeat={false}>
-                                                        <p className=" leading-relaxed font-barlow ">{item.description2}</p>
-                                                    </ViewDetectAnimation>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </MyDiv>
-
+             
                 <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full py-10 md:pt-5 -z-10'}
                     picOpp={true}
                     customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'}
@@ -194,12 +159,9 @@ function HomeClientComponent() {
                             <div className="flex items-end pb-4 text-2xl flex-grow">
                                 <QuoteForm />
                             </div>
-
                         </div>
                     </div>
                 </MyDiv>
-
-                
                 <Footer />
             </div>
             : (<><Loading /></>));

@@ -35,7 +35,8 @@ function Projects() {
             <div className='flex flex-col z-10 '>
               <div className='flex justify-between p-3 '>
                 <Link href="/" className="my-auto mr-auto">
-                  <Image width={500} height={500} src="images/logo/night.svg" className="block md:h-14 mr-3 h-8" alt="Spareöom Logo" />
+                  <Image width={500} height={500} src="images/logo/logo2.svg" className="dark:hidden block md:h-14 mr-3 h-8" alt="Spareöom Logo" />
+                  <Image width={500} height={500} src="images/logo/night.svg" className="dark:block hidden md:h-14 mr-3 h-8" alt="Spareöom Logo" />
                 </Link>
               </div>
             </div>
@@ -77,10 +78,9 @@ function Projects() {
         <ParallaxLayer
           className="-z-50 flex justify-center items-center pb-20"
           speed={0.5}
-          sticky={{ start: 0.5, end: pics.length - 1.5 }}>      
-            <Image width={500} height={500} src="images/logo/logo2.svg" className="dark:hidden block md:h-14 mr-3 h-8" alt="Spareöom Logo" />
-            <Image width={500} height={500} src="images/logo/night.svg" className="dark:block hidden md:h-14 mr-3 h-8" alt="Spareöom Logo" />
-
+          sticky={{ start: 0.5, end: pics.length - 1.5 }}>
+          <Image width={500} height={500} src="images/logo/logo2.svg" className="dark:hidden block md:h-14 mr-3 h-8" alt="Spareöom Logo" />
+          <Image width={500} height={500} src="images/logo/night.svg" className="dark:block hidden md:h-14 mr-3 h-8" alt="Spareöom Logo" />
         </ParallaxLayer>
 
         {pics.map((item, index) => (

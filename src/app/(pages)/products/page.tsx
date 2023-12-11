@@ -1,5 +1,6 @@
 'use client'
 import ViewDetectAnimation from "@component/components/animationComponents/viewDetectAnimation/ViewDetectAnimation"
+import QuoteForm from "@component/components/dataComponents/quoteForm/QuoteForm"
 import Banner from "@component/components/structuralComponents/banner/Banner"
 import Footer from "@component/components/structuralComponents/footer/Footer"
 import Header from "@component/components/structuralComponents/header/Header"
@@ -88,8 +89,8 @@ export default function Products() {
                 </div>
             </Banner>
             <MyDiv picOpp={false} customCssPicInner={undefined} customCssPicOuter={undefined} backgroundImageName={""} >
-                <div className="flex w-full min-h-fit ">
-                    <div className="flex w-1/6 text-3xl justify-center items-center">
+                <div className="flex justify-center items-center w-full min-h-fit ">
+                    <div className="flex w-1/6 text-3xl ">
                         <button>
                             {"<"}
                         </button>
@@ -108,26 +109,9 @@ export default function Products() {
                                     <a className="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Details</a> */}
                                         </div>
                                         <p className="leading-relaxed mb-4">Browse our product categories and begin your design journey with SpareRoom. We invite you to explore, envision, and embrace a world of design possibilities.</p>
-                                        <div className="flex border-t border-gray-200 py-2">
-                                            <span className="">Color</span>
-                                            <span className="ml-auto text-gray-900">Blue</span>
-                                        </div>
-                                        <div className="flex border-t border-gray-200 py-2">
-                                            <span className="">Size</span>
-                                            <span className="ml-auto ">Medium</span>
-                                        </div>
-                                        <div className="flex border-t border-b mb-6 border-gray-200 py-2">
-                                            <span className="">Quantity</span>
-                                            <span className="ml-auto ">4</span>
-                                        </div>
                                         <div className="flex">
                                             <span className="title-font font-medium text-2xl ">$58.00</span>
-                                            <button className="flex ml-auto text-white bg-red-800 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Button</button>
-                                            <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
-                                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
-                                                </svg>
-                                            </button>
+                                            
                                         </div>
                                     </div>
                                     <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400" />
@@ -136,7 +120,7 @@ export default function Products() {
                         </section>
                     </ViewDetectAnimation>
 
-                    <div className="flex w-1/6 text-3xl justify-center items-center">
+                    <div className="flex w-1/6 text-3xl ">
                         <button>
                             {">"}
                         </button>
@@ -145,6 +129,25 @@ export default function Products() {
                 </div>
 
             </MyDiv>
+
+            <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full py-10 md:pt-5 -z-10'}
+                    picOpp={true}
+                    customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'}
+                    backgroundImageName={"background/pictures-04.png"} >
+                    <div className="flex min-h-screen w-full p-10 z-50 border-blue-600">
+                        <div className="flex flex-col h-full w-4/6 ">
+                            <div className="md:text-2xl text-md font-barlow ">
+                                Its time
+                            </div>
+                            <div className="md:text-4xl text-xl font-barlow ">
+                                to Discuss your project
+                            </div>
+                            <div className="flex items-end pb-4 text-2xl flex-grow">
+                                <QuoteForm />
+                            </div>
+                        </div>
+                    </div>
+                </MyDiv>
 
            
             <Footer />
