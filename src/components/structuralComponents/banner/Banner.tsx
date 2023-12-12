@@ -21,7 +21,7 @@ export default function Banner(props: IBannerProp) {
         <div className='h-screen relative'>
             <div className={customCssPicOuter}>
                 <div className={customCssPicInner }>
-                    <Image width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%' }} onLoad={handleImageLoad} priority={true} src={`/images/${backgroundImageName}`} alt={'banner'} />
+                    <Image width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%' }} onLoad={handleImageLoad} priority={true} quality={100} src={`/images/${backgroundImageName}`} alt={'banner'} />
                 </div>
             </div>
             <div className='flex flex-col h-full w-full container mx-auto relative'>

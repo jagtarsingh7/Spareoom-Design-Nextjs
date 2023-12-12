@@ -29,6 +29,7 @@ export interface IMyDivProp {
   customCssPicOuter: string | undefined ,
   backgroundImageName: string,
   children: ReactNode | ReactNode[],
+  customPicCss: string | undefined 
 
 }
 

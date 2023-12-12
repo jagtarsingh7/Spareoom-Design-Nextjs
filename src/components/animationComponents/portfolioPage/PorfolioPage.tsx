@@ -1,25 +1,46 @@
 import { IPortfolioPage } from '../../../Interface/Interfaces';
 import { ParallaxLayer } from '@react-spring/parallax'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ViewDetectAnimation from '../viewDetectAnimation/ViewDetectAnimation';
+import Loading from '@component/app/loading';
+import Image from 'next/image';
 
-const PorfolioPage = (props:IPortfolioPage) => {
-  const{ reff, location, offset, image }=props
+const PorfolioPage = (props: IPortfolioPage) => {
+  const { reff, location, offset, image } = props
   const locationData = Object.values(location)
   const [count] = useState(offset);
-  const scroll = (to:number) => {
+  const [loader, setLoader] = useState(false)
+
+  const scroll = (to: number) => {
     if (reff.current) {
       const newPosition = (to + 1) % 10;
       reff.current.scrollTo(newPosition);
     }
   };
 
+  const handleImageLoad = () => {
+    console.log(loader)
+    setLoader(true)
+    console.log(loader)
+
+  };
+
+  useEffect(()=>{
+    console.log(loader)
+    setTimeout(() => {
+      setLoader(true)
+    }, 5000);
+  },[])
+
   return (
+
     <>
       <ParallaxLayer offset={count} style={{ cursor: "pointer" }} className="flex justify-center items-center" speed={0.2} onClick={() => { scroll(count) }}>
-        <img src={image} alt="project" className=" mx-auto w-5/6 sm:h-full h-4/6 shadow-2xl shadow-black" />
+        {loader ?
+          (<img  onLoad={handleImageLoad} src={image} alt="project" className=" mx-auto w-5/6 sm:h-full h-4/6 shadow-2xl shadow-black" />)
+          : (<Loading></Loading>)}
       </ParallaxLayer>
-   
+
       <ParallaxLayer
         style={{
           pointerEvents: "none"
@@ -35,6 +56,8 @@ const PorfolioPage = (props:IPortfolioPage) => {
           </article>
         </ViewDetectAnimation>
       </ParallaxLayer>
-    </>)
+    </>
+  )
+
 }
 export default PorfolioPage

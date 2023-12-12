@@ -88,7 +88,7 @@ export default function Products() {
 
                 </div>
             </Banner>
-            <MyDiv picOpp={false} customCssPicInner={undefined} customCssPicOuter={undefined} backgroundImageName={""} >
+            <MyDiv picOpp={false} customCssPicInner={undefined} customCssPicOuter={undefined} backgroundImageName={""} customPicCss={undefined} >
                 <div className="flex justify-center items-center w-full min-h-fit ">
                     <div className="flex w-1/6 text-3xl ">
                         <button>
@@ -111,7 +111,7 @@ export default function Products() {
                                         <p className="leading-relaxed mb-4">Browse our product categories and begin your design journey with SpareRoom. We invite you to explore, envision, and embrace a world of design possibilities.</p>
                                         <div className="flex">
                                             <span className="title-font font-medium text-2xl ">$58.00</span>
-                                            
+
                                         </div>
                                     </div>
                                     <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400" />
@@ -124,32 +124,30 @@ export default function Products() {
                         <button>
                             {">"}
                         </button>
-
                     </div>
                 </div>
-
             </MyDiv>
 
             <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full py-10 md:pt-5 -z-10'}
-                    picOpp={true}
-                    customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'}
-                    backgroundImageName={"background/pictures-04.png"} >
-                    <div className="flex min-h-screen w-full p-10 z-50 border-blue-600">
-                        <div className="flex flex-col h-full w-4/6 ">
-                            <div className="md:text-2xl text-md font-barlow ">
-                                Its time
-                            </div>
-                            <div className="md:text-4xl text-xl font-barlow ">
-                                to Discuss your project
-                            </div>
-                            <div className="flex items-end pb-4 text-2xl flex-grow">
-                                <QuoteForm />
-                            </div>
+            picOpp={true}
+            customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'}
+            backgroundImageName={"background/pictures-04.png"}  customPicCss={undefined} >
+                <div className="flex min-h-screen w-full py-14 z-50 border-blue-600">
+                    <div className="flex flex-col h-full w-4/6 ">
+                        <div className="md:text-2xl text-md font-barlow ">
+                            Contact us
+                        </div>
+                        <div className="md:text-4xl text-xl font-barlow ">
+                            to Discuss your project
+                        </div>
+                        <div className="flex items-end pb-4 text-2xl flex-grow">
+                            <QuoteForm />
                         </div>
                     </div>
-                </MyDiv>
+                </div>
+            </MyDiv>
 
-           
+
             <Footer />
         </div>
     )

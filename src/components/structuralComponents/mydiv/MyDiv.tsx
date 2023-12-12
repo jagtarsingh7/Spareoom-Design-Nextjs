@@ -7,7 +7,7 @@ import Loading from '@component/app/loading';
 
 export default function MyDiv(props: IMyDivProp) {
 
-    const { picOpp, backgroundImageName, children, customCssPicInner, customCssPicOuter } = props
+    const { picOpp, backgroundImageName, children, customCssPicInner, customCssPicOuter, customPicCss } = props
     const [loader, setLoader] = useState(false)
     const handleImageLoad = () => {
         setLoader(true)
@@ -23,7 +23,7 @@ export default function MyDiv(props: IMyDivProp) {
             {picOpp &&
                 <div className ={` z-20 ${customCssPicOuter}`}>
                     <div className={` z-20 ${customCssPicInner}`}>
-                        <Image  width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%' }} onLoad={handleImageLoad} src={`/images/${backgroundImageName}`} alt={'banner'} />
+                        <Image className={customPicCss} priority={true} width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%' }} onLoad={handleImageLoad} src={`/images/${backgroundImageName}`} alt={'banner'} />
                     </div>
                 </div>
             }

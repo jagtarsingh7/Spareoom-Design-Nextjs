@@ -70,7 +70,7 @@ function HomeClientComponent() {
                     <div className="flex h-full items-center">
                         <div className="mt-10 flex flex-col w-full" >
                             <div className="flex w-full justify-between " >
-                                <animated.div style={animateSpring3} className=" font-barlow flex flex-grow lg:text-8xl md:text-6xl sm:text-5xl text-2xl text-start">
+                                <animated.div style={animateSpring3} className=" font-barlow flex flex-grow lg:text-8xl md:text-6xl sm:text-5xl text-4xl text-start">
                                     Your Destination
                                 </animated.div>
                                 {/* <animated.div className=" flex justify-end w-2/6  md:text-base text-xs items-center ">
@@ -79,7 +79,7 @@ function HomeClientComponent() {
                                 </animated.div> */}
                             </div>
                             <div className="flex w-full justify-between mt-2  " >
-                                <animated.div className=" flex w-2/6 md:text-base text-xs text-start  py-3 ">
+                                <animated.div className="flex w-2/6 md:text-base text-xs text-start  py-3 ">
                                     <p>
                                         Where your dream of a beautifully designed living space comes to life.
                                     </p>
@@ -94,10 +94,9 @@ function HomeClientComponent() {
 
                 <MyDiv
                     customCssPicOuter={'flex justify-end absolute top-0 w-full md:px-5 h-screen -z-10'}
-                    customCssPicInner={'md:w-2/6 md:h-4/6 h-0 w-0 rounded-md dark:opacity-80 opacity-95 '}
+                    customCssPicInner={'md:w-2/6 md:h-4/6 h-0 w-0 rounded-md  '}
                     backgroundImageName={"background/pictures-01.png"}
-                    picOpp={true}
-                >
+                    picOpp={true} customPicCss={'dark:opacity-90 opacity-90 '} >
                     <div className="flex h-full flex-col font-barlow ">
                         <div className="flex h-4/4 w-full justify-start py-10 ">
                             <div className="flex flex-col w-3/6 ">
@@ -123,14 +122,14 @@ function HomeClientComponent() {
 
                 <MyDiv
                     customCssPicOuter={'flex justify-center items-center  absolute top-0 h-screen w-full md:px-5 -z-10'}
-                    customCssPicInner={'md:w-4/5 md:h-3/4  rounded-md dark:opacity-80 opacity-95 '}
+                    customCssPicInner={'md:w-3/6 md:h-full  rounded-md dark:bg-transparent bg-black '}
                     backgroundImageName={"background/pictures-07.png"}
-                    picOpp={true} >
+                    picOpp={true} customPicCss={'dark:opacity-70 opacity-90'} >
                     <div className="flex min-h-screen flex-col justify-end ">
                         <div className="h-1/4">
                             <SmallCoreValues />
                         </div>
-                        <Link className="flex justify-center hover:text-red-900  md:text-3xl text-2xl  font-playfair pt-10 pb-14" href={"/about"}>
+                        <Link className="flex   justify-center hover:text-red-900  md:text-3xl text-2xl  font-playfair pt-10 pb-14" href={"/about"}>
                             Explore more
                         </Link>
                     </div>
@@ -138,9 +137,9 @@ function HomeClientComponent() {
 
              
                 <MyDiv customCssPicOuter={'flex justify-end items-center absolute top-0 h-screen w-full py-10 md:pt-5 -z-10'}
-                    picOpp={true}
-                    customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-80 opacity-95'}
-                    backgroundImageName={"background/pictures-04.png"} >
+                picOpp={true}
+                customCssPicInner={'w-1/3 h-4/6 rounded-md dark:opacity-90 opacity-95'}
+                backgroundImageName={"background/pictures-04.png"} customPicCss={undefined} >
                     <div className="flex min-h-screen w-full py-14 z-50 border-blue-600">
                         <div className="flex flex-col h-full w-4/6 ">
                             <div className="md:text-2xl text-md font-barlow ">

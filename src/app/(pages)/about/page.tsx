@@ -55,14 +55,14 @@ export default function About() {
         <div>
             <Banner
                 headerOn={<Header></Header>}
-                customCssPicInner={'w-2/4 dark:opacity-70 dark:opacity-80'}
-                customCssPicOuter={'flex justify-end absolute top-0 -z-10 h-screen w-full dark:bg-black'}
-                backgroundImageName={"background/pictures-03.png"}
+                customCssPicInner={'w-3/4 dark:opacity-70 opacity-90   '}
+                customCssPicOuter={'flex justify-center absolute top-0 -z-10 h-screen w-full dark:bg-black '}
+                backgroundImageName={"background/pictures-07.png"}
             >
-                <div className="flex h-full items-center">
-                    <div className="mt-10 flex flex-col w-full  " >
-                        <div className="flex w-full justify-between " >
-                            <animated.div style={animateSpring2} className=" font-playfair flex flex-grow lg:text-8xl md:text-6xl text-5xl text-start">
+                <div className="flex h-full items-center  justify-center">
+                    <div className="mt-10 flex flex-col  justify-center text-center" >
+                        <div className="flex w-full justify-between   " >
+                            <animated.div style={animateSpring2} className=" font-playfair flex flex-grow lg:text-8xl md:text-6xl text-5xl text-start text-white">
                                 About Us
                             </animated.div>
                             {/* <animated.div style={animateSpring4} className=" flex justify-end w-2/6  md:text-base text-xs items-center ">
@@ -70,8 +70,8 @@ export default function About() {
                                 Our goal is to assist you at every step of your design journey, ensuring that you achieve the vision you have for your dream space.
                             </animated.div> */}
                         </div>
-                        <div className="flex w-full " >
-                            <animated.div style={animateSpring3} className=" font-roboto flex w-3/6  text-start lg:text-2xl md:text-lg text-base ">
+                        <div className="flex " >
+                            <animated.div style={animateSpring3} className=" font-barlow flex w-full justify-center   lg:text-2xl md:text-lg text-base text-center text-white ">
                                 Where Dreams Meet Design
                             </animated.div>
                         </div>
@@ -81,10 +81,9 @@ export default function About() {
             </Banner>
 
             <MyDiv customCssPicOuter={'flex justify-start absolute top-0 w-full md:p-10 h-screen items-center -z-10'}
-                picOpp={true} 
-                customCssPicInner={'w-2/4 h-6/6 rounded-md dark:opacity-80  '}
-                backgroundImageName={"background/pictures-02.png"}
-                >
+                picOpp={true}
+                customCssPicInner={'w-2/4 h-5/6 rounded-md dark:opacity-80  '}
+                backgroundImageName={"background/new/IMG_2172.JPG"} customPicCss={undefined}                >
 
                 <div className="flex h-full flex-col justify-between font-playfair z-10 ">
                     <div className="flex flex-grow w-full justify-end items-center m-5">
@@ -223,7 +222,8 @@ export default function About() {
             </MyDiv> */}
 
             <MyDiv customCssPicOuter={'flex justify-start items-center absolute top-0 h-screen w-full p-10 -z-10'}
-                picOpp={false} customCssPicInner={'w-1/3 h-4/6 rounded-sm'} backgroundImageName={"background/pictures-05.png"} >
+                picOpp={false} customCssPicInner={'w-1/3 h-4/6 rounded-sm'}
+                backgroundImageName={"background/new/IMG_2172.JPG"} customPicCss={undefined} >
                 <div className="flex  min-h-screen justify-center text-center w-full p-10 items-center z-10 ">
                     <div className="flex flex-col  h-full items-center  w-4/6 ">
                         <div className="text-2xl">
@@ -278,43 +278,43 @@ export default function About() {
                 </div>
             </MyDiv>
             <MyDiv customCssPicOuter={'flex justify-start absolute top-0 h-screen w-full md:px-10 py-20 -z-10'}
-                    picOpp={true}
-                    customCssPicInner={' w-1/3 h-5/6 rounded-md dark:opacity-80 opacity-95'}
-                    backgroundImageName={"background/pictures-02.png"} >
-                    <div className="flex w-full justify-end z-10 ">
-                        <div className=" w-2/3 h-full flex  ">
-                            <section className=" body-font overflow-hidden">
-                                <div className="container px-5 py-16 mx-auto">
-                                    <div className="-my-8 divide-y-2 divide-gray-100">
-                                        {policiesValues.map((item, index) => (
-                                            <div key={index} className="py-4 flex flex-wrap md:flex-nowrap">
-                                                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                                    <ViewDetectAnimation direction={"Y"} level={10} speed={500} styles={""} to={0} repeat={false}>
-                                                        <span className=" font-playfair title-font md:text-3xl text-x">{item.title}</span>
-                                                    </ViewDetectAnimation>
-                                                </div>
-                                                <div className="md:flex-grow">
-                                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={"hidden md:block"} level={0} to={0} repeat={false}>
-                                                        <h2 className="md:text-lg text-md  font-barlow  title-font mb-2">{item.description1}</h2>
-                                                    </ViewDetectAnimation>
-                                                    <ViewDetectAnimation direction={"Y"} speed={500} styles={" "} level={0} to={0} repeat={false}>
-                                                        <p className=" leading-relaxed font-barlow ">{item.description2}</p>
-                                                    </ViewDetectAnimation>
-                                                </div>
+                picOpp={true}
+                customCssPicInner={' w-1/3 h-5/6 rounded-md dark:opacity-80 opacity-95'}
+                backgroundImageName={"background/new/IMG_2171.JPG"} customPicCss={undefined} >
+                <div className="flex w-full justify-end z-10 ">
+                    <div className=" w-2/3 h-full flex  ">
+                        <section className=" body-font overflow-hidden">
+                            <div className="container px-5 py-16 mx-auto">
+                                <div className="-my-8 divide-y-2 divide-gray-100">
+                                    {policiesValues.map((item, index) => (
+                                        <div key={index} className="py-4 flex flex-wrap md:flex-nowrap">
+                                            <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                                <ViewDetectAnimation direction={"Y"} level={10} speed={500} styles={""} to={0} repeat={false}>
+                                                    <span className=" font-playfair title-font md:text-3xl text-x">{item.title}</span>
+                                                </ViewDetectAnimation>
                                             </div>
-                                        ))}
-                                    </div>
+                                            <div className="md:flex-grow">
+                                                <ViewDetectAnimation direction={"Y"} speed={500} styles={"hidden md:block"} level={0} to={0} repeat={false}>
+                                                    <h2 className="md:text-lg text-md  font-barlow  title-font mb-2">{item.description1}</h2>
+                                                </ViewDetectAnimation>
+                                                <ViewDetectAnimation direction={"Y"} speed={500} styles={" "} level={0} to={0} repeat={false}>
+                                                    <p className=" leading-relaxed font-barlow ">{item.description2}</p>
+                                                </ViewDetectAnimation>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
-                            </section>
-                        </div>
+                            </div>
+                        </section>
                     </div>
-                </MyDiv>
+                </div>
+            </MyDiv>
 
 
-            <MyDiv customCssPicOuter={'flex items-start absolute top-0 h-screen w-full p-10 -z-10'}
-                picOpp={true} customCssPicInner={'w-full md:h-3/6 h-2/6 rounded-sm'} backgroundImageName={"background/pictures-02.png"} >
+            <MyDiv customCssPicOuter={'flex items-start absolute top-0 h-screen w-full  -z-10 justify-center'}
+                picOpp={true} customCssPicInner={'flex w-3/4 md:h-3/6 h-2/6 rounded-sm'} backgroundImageName={"background/new/IMG_2190.jpg"} customPicCss={''} >
                 <div className="flex justify-center h-screen w-full z-10">
-                    <div className="flex flex-col h-full w-5/6 items-low justify-end mt-5 text-center ">
+                    <div className="flex flex-col h-full w-5/6 items-low justify-end text-center ">
                         <div className="flex justify-center md:text-5xl sm:text-2xl text-lg font-playfair ">
                             Our Mission
                         </div>
