@@ -19,6 +19,8 @@ const config: Config = {
         dancing: ['var(--font-dancing)'],
         barlow: ['var(--font-barlow)'],
         italianno: ['var(--font-italianno)'],
+        roboto: ['var(--font-roboto)'],
+        playfair: ['var(--font-playfair)'],
       },
     },
   },

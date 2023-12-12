@@ -35,8 +35,8 @@ function QuoteForm() {
   }
 
   return (
-    < section className=" text-black font-dancing">
-      <div className="mx-auto max-w-screen-xl">
+    < section className=" text-black font-playfair">
+      <div className=" max-w-screen-xl">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       
           {loading ? (<div className='h-full '><div className=' h-full w-full transition animate-spin duration-500 flex justify-center items-center '> <Loading/> </div></div>) : (

@@ -182,7 +182,7 @@ function Header() {
                                 <Link href="/products" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  text-black dark:text-white">Products</Link>
                             </li>
                             <li onClick={() => setIsSubMenuOpen(true)}>
-                                <Link href="/sustainabilty" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Sustainabilty</Link>
+                                <Link href="/sustainability" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Sustainability</Link>
                             </li>
                             <li onClick={() => setIsSubMenuOpen(true)}>
                                 <Link href="/about" className="block py-2 pr-4 pl-3  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">About</Link>
@@ -273,7 +273,7 @@ function Header() {
                             </li> */}
                         </ul>
                         {isMenuOpen &&
-                            <ViewDetectAnimation styles='flex w-screen sm:hidden ' direction={'X'} speed={1000} level={100} to={0} repeat={true}>
+                            <ViewDetectAnimation styles='flex w-screen sm:hidden ' direction={'X'} speed={600} level={100} to={0} repeat={true}>
                                 <ul className="flex flex-col w-full lg:space-x-8 dark:bg-black dark:opacity-70 lg:mt-0 font-italianno">
                                     <li onClick={() => setIsSubMenuOpen(true)} >
                                         <Link href="/projects" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  text-black dark:text-white">Projects</Link>
@@ -282,10 +282,10 @@ function Header() {
                                         <Link href="/products" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  text-black dark:text-white">Products</Link>
                                     </li>
                                     <li onClick={() => setIsSubMenuOpen(true)}>
-                                        <Link href="/contact" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Sustainabilty</Link>
+                                        <Link href="/sustainability" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">Sustainability</Link>
                                     </li>
                                     <li onClick={() => setIsSubMenuOpen(true)}>
-                                        <Link href="/contact" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">About</Link>
+                                        <Link href="/about" className="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-black dark:text-white">About</Link>
                                     </li>
 
                                     {/* <li>

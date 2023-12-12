@@ -104,7 +104,7 @@ export default function Products() {
                                         <h2 className="text-sm title-font text-gray-500 tracking-widest">Discover Your Style Today</h2>
                                         <h1 className=" text-3xl title-font font-medium mb-4">Animated Night Hill Illustrations</h1>
                                         <div className="flex mb-4">
-                                            <a className="flex-grow text-red-500 border-b-2 font-italianno b py-2 md:text-4xl text-xl  px-1">Description</a>
+                                            <a className="flex-grow text-red-500 border-b-2 font-roboto b py-2 md:text-4xl text-xl  px-1">Description</a>
                                             {/* <a className="flex-grow border-b-2 border-gray-300order-red-500 py-2 text-lg px-1">Reviews</a>
                                     <a className="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Details</a> */}
                                         </div>

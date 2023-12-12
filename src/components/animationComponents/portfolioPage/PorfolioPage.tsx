@@ -28,8 +28,8 @@ const PorfolioPage = (props:IPortfolioPage) => {
         <ViewDetectAnimation direction={"Y"} styles={''} speed={0} level={0} to={0} repeat={false} >
           <article className="rounded-lg  border-gray-100 border-2 bg-white bg-opacity-80 md:p-6 md:mb-20 md:ml-10 mb-28">
             <div className="inline-flex gap-2 self-end rounded"> </div>
-            <div> <strong className="block text-sm font-medium text-gray-500"> Status </strong>
-              <p><span className="md:text-2xl text-lg font-medium text-gray-900">Project </span></p>
+            <div> <strong className="block text-sm font-playfair text-gray-500"> Status </strong>
+              <p><span className="md:text-2xl text-lg font-playfair text-gray-900">Project </span></p>
               <p><span className="text-xs text-gray-500"> at SpareOom  </span><span className="md:text-lg  text-md font-medium">LTD</span></p>
             </div>
           </article>

@@ -62,7 +62,7 @@ export default function About() {
                 <div className="flex h-full items-center">
                     <div className="mt-10 flex flex-col w-full  " >
                         <div className="flex w-full justify-between " >
-                            <animated.div style={animateSpring2} className=" font-barlow flex flex-grow lg:text-8xl md:text-6xl text-5xl text-start">
+                            <animated.div style={animateSpring2} className=" font-playfair flex flex-grow lg:text-8xl md:text-6xl text-5xl text-start">
                                 About Us
                             </animated.div>
                             {/* <animated.div style={animateSpring4} className=" flex justify-end w-2/6  md:text-base text-xs items-center ">
@@ -71,7 +71,7 @@ export default function About() {
                             </animated.div> */}
                         </div>
                         <div className="flex w-full " >
-                            <animated.div style={animateSpring3} className=" font-dancing flex w-3/6  text-start lg:text-3xl md:text-xl text-base ">
+                            <animated.div style={animateSpring3} className=" font-roboto flex w-3/6  text-start lg:text-2xl md:text-lg text-base ">
                                 Where Dreams Meet Design
                             </animated.div>
                         </div>
@@ -86,7 +86,7 @@ export default function About() {
                 backgroundImageName={"background/pictures-02.png"}
                 >
 
-                <div className="flex h-full flex-col justify-between font-barlow z-10 ">
+                <div className="flex h-full flex-col justify-between font-playfair z-10 ">
                     <div className="flex flex-grow w-full justify-end items-center m-5">
                         <div className="flex flex-col w-3/6 ">
                             <div className="md:text-base text-xs  ">
@@ -97,7 +97,7 @@ export default function About() {
                             <div className="flex flex-wrap md:text-base text-xs w-full py-5">
                                 SpareRoom was founded by a group of design enthusiasts who recognized the transformative power of a well-curated living space. Beginning as a small venture in a local garage, our journey has been one of growth, learning, and an unyielding dedication to our customers.
                             </div>
-                            <div className="flex items-start pb-4 md:text-base text-xs flex-grow font-barlow" >
+                            <div className="flex items-start pb-4 md:text-base text-xs flex-grow" >
                                 Over the years, we&apos;ve grown into a trusted platform offering a diverse range of handpicked furniture, decor, and accessories. Our focus has always been to provide high-quality, stylish solutions that suit various tastes and preferences.
                             </div>
                         </div>
@@ -228,17 +228,17 @@ export default function About() {
                     <div className="flex flex-col  h-full items-center  w-4/6 ">
                         <div className="text-2xl">
                         </div>
-                        <div className="md:text-5xl text-xl  font-barlow   ">
+                        <div className="md:text-5xl text-xl  font-playfair   ">
                             Our Values
                         </div>
                         <div className=" mt-4 divide-y-2 divide-gray-100">
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-2xl font-italianno title-font mb-2">Quality First</h2>
+                                        <h2 className="md:text-3xl text-2xl  title-font mb-2">Quality First</h2>
                                     </ViewDetectAnimation>
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
-                                        <p className="leading-relaxed md:text-xl text-sm">We believe that quality is non-negotiable. Every product on SpareRoom undergoes rigorous scrutiny to ensure it meets our high standards of craftsmanship and durability.</p>
+                                        <p className="leading-relaxed md:text-lg text-sm">We believe that quality is non-negotiable. Every product on SpareRoom undergoes rigorous scrutiny to ensure it meets our high standards of craftsmanship and durability.</p>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
@@ -246,30 +246,30 @@ export default function About() {
 
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-2xl font-italianno  title-font mb-2">Customer-Centricity</h2>
+                                        <h2 className="md:text-3xl text-2xl   title-font mb-2">Customer-Centricity</h2>
                                     </ViewDetectAnimation>
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
-                                        <p className="leading-relaxed md:text-xl text-sm">Our customers are at the heart of everything we do. We value your feedback, suggestions, and ideas, and continuously strive to tailor our offerings to meet your needs and aspirations.</p>
+                                        <p className="leading-relaxed md:text-lg text-sm">Our customers are at the heart of everything we do. We value your feedback, suggestions, and ideas, and continuously strive to tailor our offerings to meet your needs and aspirations.</p>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-2xl font-italianno  title-font mb-2">Design Democracy</h2>
+                                        <h2 className="md:text-3xl text-2xl title-font mb-2">Design Democracy</h2>
                                     </ViewDetectAnimation>
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
-                                        <p className="leading-relaxed md:text-xl text-sm ">We envision a world where exceptional design is accessible to all. Through our platform, we aim to democratize interior design, making it inclusive and enjoyable for everyone.</p>
+                                        <p className="leading-relaxed md:text-lg text-sm ">We envision a world where exceptional design is accessible to all. Through our platform, we aim to democratize interior design, making it inclusive and enjoyable for everyone.</p>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
                             <div className="py-4 flex flex-wrap md:flex-nowrap">
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
-                                        <h2 className="md:text-3xl text-2xl font-italianno  title-font mb-2"> Sustainability Matters</h2>
+                                        <h2 className="md:text-3xl text-2xl  title-font mb-2"> Sustainability Matters</h2>
                                     </ViewDetectAnimation>
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={true}>
-                                        <p className="leading-relaxed md:text-xl text-sm"> We are committed to sustainable business practices, from responsible sourcing to eco-friendly packaging. We believe in leaving a positive impact on the environment and the communities we serve.</p>
+                                        <p className="leading-relaxed md:text-lg text-sm"> We are committed to sustainable business practices, from responsible sourcing to eco-friendly packaging. We believe in leaving a positive impact on the environment and the communities we serve.</p>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
@@ -290,7 +290,7 @@ export default function About() {
                                             <div key={index} className="py-4 flex flex-wrap md:flex-nowrap">
                                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                                                     <ViewDetectAnimation direction={"Y"} level={10} speed={500} styles={""} to={0} repeat={false}>
-                                                        <span className=" font-italianno title-font md:text-3xl text-x">{item.title}</span>
+                                                        <span className=" font-playfair title-font md:text-3xl text-x">{item.title}</span>
                                                     </ViewDetectAnimation>
                                                 </div>
                                                 <div className="md:flex-grow">
@@ -315,7 +315,7 @@ export default function About() {
                 picOpp={true} customCssPicInner={'w-full md:h-3/6 h-2/6 rounded-sm'} backgroundImageName={"background/pictures-02.png"} >
                 <div className="flex justify-center h-screen w-full z-10">
                     <div className="flex flex-col h-full w-5/6 items-low justify-end mt-5 text-center ">
-                        <div className="flex justify-center md:text-5xl sm:text-2xl text-lg font-barlow ">
+                        <div className="flex justify-center md:text-5xl sm:text-2xl text-lg font-playfair ">
                             Our Mission
                         </div>
                         <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
@@ -325,7 +325,7 @@ export default function About() {
                             <p className="leading-relaxed font-dancing md:text-2xl text-base">Our mission at SpareRoom is to inspire and guide you in creating spaces that reflect your personality and lifestyle. We aim to provide a seamless and delightful shopping experience, offering not just products, but a journey of design exploration..</p>
                             <span className="inline-block h-1 w-10 rounded mt-8 mb-6"></span>
                             <h2 className="font-medium title-font tracking-wider text-sm">Tima Ashley</h2>
-                            <p className="font-dancing text-2xl">Senior Product Designer</p>
+                            <p className="font-playfair text-2xl">Senior Product Designer</p>
                         </div>
 
                     </div>
