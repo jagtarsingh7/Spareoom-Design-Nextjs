@@ -137,7 +137,7 @@ function Services() {
                                 <div className="md:flex-grow">
                                     <ViewDetectAnimation direction={"Y"} speed={500} styles={""} level={0} to={0} repeat={false}>
                                         <h2 className=" sm:text-lg text-sm font-roboto title-font mb-2 pr-2"> 
-                                        Our commitment to sustainability is at the core of everything we do. We believe that beautiful, functional, and environmentally responsible designs can coexist harmoniously. That's why we source our materials and collaborate with talented artisans from the vibrant landscapes of Ghana.                                         </h2>
+                                        Our commitment to sustainability is at the core of everything we do. We believe that beautiful, functional, and environmentally responsible designs can coexist harmoniously. That&aposs why we source our materials and collaborate with talented artisans from the vibrant landscapes of Ghana.                                         </h2>
                                     </ViewDetectAnimation>
                                 </div>
                             </div>
@@ -178,7 +178,7 @@ function Services() {
                         <ViewDetectAnimation styles="flex flex-col text-center w-full mb-20" direction={"Y"} speed={1000} level={-10} to={0} repeat={false}>
                             <h2 className="text-xstracking-widest font-playfair title-font mb-1">Join Us in Creating a Sustainable Future</h2>
                             <h1 className="sm:text-3xl text-2xl font-playfair title-font mb-4 ">Your Path to Inspired Living</h1>
-                            <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-roboto">We invite you to explore our diverse range of custom furniture and interior design solutions, each with its own unique charm and eco-friendly story. By choosing SpareOom, you're not only enhancing your living spaces but also contributing to a greener, more sustainable future.</p>
+                            <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-roboto">We invite you to explore our diverse range of custom furniture and interior design solutions, each with its own unique charm and eco-friendly story. By choosing SpareOom, you&aposre not only enhancing your living spaces but also contributing to a greener, more sustainable future.</p>
                         </ViewDetectAnimation>
                         <ViewDetectAnimation direction={"Y"} speed={1000} level={10} to={0} repeat={false} styles="flex justify-center flex-wrap">
                             <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
